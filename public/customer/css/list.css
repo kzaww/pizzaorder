@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#pizzaImage {
+    filter: brightness(70%);
+    transition: 0.5s
+}
+
+#pizzaImage:hover {
+    filter: brightness(100%);
+}
+
+#code-lab-pizza {
+    animation: pop 1s ease;
+}
+
+.badge {
+    z-index: 1;
+}
+
+@keyframes pop {
+    from {
+        transform: rotateY(80deg);
+    }
+    to {
+        transform: none;
+    }
+}
